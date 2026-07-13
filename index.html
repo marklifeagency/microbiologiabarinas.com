@@ -372,10 +372,12 @@ section{padding:96px 5%}
 .ig-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(120px,30%),1fr));gap:3px;margin-top:36px;border-radius:3px;overflow:hidden}
 .ig-c{aspect-ratio:1;position:relative;cursor:pointer;transition:var(--tr)}
 .ig-c:hover{transform:scale(1.04);z-index:1;box-shadow:0 8px 24px rgba(0,0,0,.18)}
-.ig-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:rgba(255,255,255,.35)}
+.ig-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55)}
+.ig-inner .icon{width:2.6rem;height:2.6rem}
 .ig-c:nth-child(odd){background:linear-gradient(135deg,var(--b),var(--bl))}
 .ig-c:nth-child(3n){background:linear-gradient(135deg,var(--rd),var(--r))}
 .ig-c:nth-child(2){background:linear-gradient(135deg,#0D1F40,var(--b))}
+.ig-c:nth-child(4){background:linear-gradient(135deg,var(--bl),var(--b))}
 .ig-ov{position:absolute;inset:0;background:rgba(0,0,0,.44);opacity:0;transition:var(--tr);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem}
 .ig-c:hover .ig-ov{opacity:1}
 
@@ -846,9 +848,12 @@ a,button{touch-action:manipulation}
 .vp-poster-bg{
   position:absolute;inset:0;
   background:
-    radial-gradient(80% 120% at 30% 20%, rgba(200,16,46,.28), transparent 60%),
-    radial-gradient(90% 130% at 85% 90%, rgba(26,58,92,.55), transparent 60%),
-    linear-gradient(135deg,#0C1826,#0A1420);
+    radial-gradient(80% 120% at 30% 20%, rgba(200,16,46,.30), transparent 60%),
+    radial-gradient(90% 130% at 85% 90%, rgba(26,58,92,.50), transparent 60%),
+    linear-gradient(0deg, rgba(6,13,21,.55), rgba(6,13,21,.15)),
+    url('presentacion-poster.jpg');
+  background-size:cover;
+  background-position:center;
   transition:transform 1.1s cubic-bezier(.16,1,.3,1);
 }
 .vp-poster::after{
@@ -1475,15 +1480,10 @@ a,button{touch-action:manipulation}
       <div class="tcard rv" style="transition-delay:.24s"><div class="tq">"</div><div class="tstars"><span class="star-row"><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg></span></div><p class="ttxt">"Pedí cotización por WhatsApp y en minutos me respondieron con todos los detalles. El proceso fue rapidísimo y sin complicaciones."</p><div class="tauthor"><strong>José L.</strong><span>Paciente Alto Barinas</span></div></div>
       <div class="tcard rv" style="transition-delay:.32s"><div class="tq">"</div><div class="tstars"><span class="star-row"><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg></span></div><p class="ttxt">"Llevé a mi mamá mayor y la trataron con mucho respeto y paciencia. La toma de muestra fue rápida y sin dolor. Muy buena experiencia."</p><div class="tauthor"><strong>Luisa P.</strong><span>Familiar de paciente</span></div></div>
       <div class="tcard rv" style="transition-delay:.40s"><div class="tq">"</div><div class="tstars"><span class="star-row"><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg><svg class="icon star-fill"><use href="#i-star"/></svg></span></div><p class="ttxt">"Hice el perfil pre-empleo completo aquí. Resultados el mismo día y a un precio muy accesible. El laboratorio está impecable, muy limpio."</p><div class="tauthor"><strong>Ricardo V.</strong><span>Paciente Sede Centro</span></div></div>
-      </div><p class="ttxt">"Me explicaron cada resultado de manera sencilla. Por primera vez entendí exactamente qué significaban mis exámenes. El trato fue excelente y muy humano."</p><div class="tauth"><div class="tav">M</div><div class="tauth-inf"><strong>María Rodríguez</strong><span>Paciente, Barinas</span></div></div></div>
-      <div class="tcard rv" style="transition-delay:.1s"><div class="tq">"</div><div class="tstars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div><p class="ttxt">"Resultados muy rápidos y precisos. Equipos modernos, personal altamente profesional. Referente absoluto de microbiología en la región."</p><div class="tauth"><div class="tav">C</div><div class="tauth-inf"><strong>Dr. Carlos Mendoza</strong><span>Médico Internista</span></div></div></div>
-      <div class="tcard rv" style="transition-delay:.2s"><div class="tq">"</div><div class="tstars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div><p class="ttxt">"Mi mamá tiene 75 años y la trataron con toda la paciencia del mundo. Explican todo sin prisa y con mucho cuidado. Los mejores de Barinas."</p><div class="tauth"><div class="tav">L</div><div class="tauth-inf"><strong>Laura Pérez</strong><span>Familiar de paciente</span></div></div></div>
+      </div>
     </div>
   </div>
-</section>
-
-
-<!-- INSTAGRAM -->
+</section><!-- INSTAGRAM -->
 <section id="insta">
   <div class="container">
     <div class="sec-c rv" style="margin-bottom:28px">
@@ -2458,7 +2458,7 @@ renderQL(); renderCart();
     frame.classList.remove('previewing');
   }
   function watchWithSound(){
-    if(!vid) return;
+    if(!vid || watching) return;  // ignore once already transitioned, so native controls work normally
     watching = true;
     vid.loop  = false;
     vid.muted = false;
@@ -2474,7 +2474,8 @@ renderQL(); renderCart();
     frame.addEventListener('mouseenter', previewOn);
     frame.addEventListener('mouseleave', previewOff);
   }
-  if(poster){ poster.addEventListener('click', watchWithSound); }
+  // Click anywhere on the frame (poster visible OR hidden mid-preview) switches to full sound playback
+  if(frame){ frame.addEventListener('click', watchWithSound); }
   if(playBtn){ playBtn.addEventListener('click', function(e){ e.stopPropagation(); watchWithSound(); }); }
   if(frame && !hasHover){
     frame.addEventListener('touchstart', function(){ if(!watching) previewOn(); }, {passive:true});
